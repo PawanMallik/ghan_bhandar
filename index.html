@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyan Bhandar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="super_section">
+        <nav class="nave">
+            <div class="left_nav">
+                <img src="logo.jpg" alt="logo" style="height: 50px; width: 50px;">
+                <h1 class="gy_h1">GHYAN BHANDAR</h1>
+            </div>
+            <div class="right_nav topnav" id="myTopnav">
+                <ul class="center">
+                    <li><a class="underline" href="#">Home</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn underline underline2">Cource
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">BCA</a>
+                            <a href="#">BBA</a>
+                            <a href="#">B.com(hons)</a>
+                        </div>
+                    </div>
+                    <li><a class="underline" href="#">Request</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+
+        <section class="st_cont">
+            <div class="one">
+                <h1>What do you want to learn?</h1>
+                <div class="search">
+                    <input class="search1" type="search" placeholder="Enything you want">
+                    <button type="submit"><i class="fa  fa-search"></i></button>
+                </div>
+            </div>
+            <div class="two">
+                <div class="small_cont">
+                    <a href="#" class="cources">
+                        <img src="BCA.jpg" class="bca_img" alt="cource img">
+                        <div class="detail">
+                            <h1>-: BCA :-</h1>
+                            <p class="para">
+                                BCA offers benefits such as developing strong computing skills, preparing for IT careers, and fostering problem-solving abilities in technology.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="cources">
+                        <img src="BBA.jpg" class="bba_img" alt="cource img">
+                        <div class="detail">
+                            <h1>-: BBA :-</h1>
+                            <p class="para">
+                                BBA: Undergraduate business program for diverse career paths in management and administration.
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="cources">
+                        <img src="b.com(hons).jpg" class="bcom_img" alt="cource img">
+                        <div class="detail">
+                            <h1>-: B.Com :-</h1>
+                            <p class="para">
+                                B.Com (Hons): Undergraduate commerce program focusing on advanced studies in accounting, finance, and business management.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer
+        style="height: 50px; width: 100% ; color: white; display: flex; justify-content: center; align-items: center; background-color: black">
+        &copy;All Right Reserved "By Pawan"
+    </footer>
+
+    <script>
+        burger = document.querySelector('.burger')
+        rightNav = document.querySelector('.topnav')
+
+        burger.addEventListener('click', () => {
+            rightNav.classList.toggle('topnav');
+        })
+    </script>
+
+</body>
+
+</html>
